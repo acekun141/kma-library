@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+html, body {
+  font-family: 'Dosis', sans-serif;
+}
+
+:root {
+  --font-xs: 0.6rem;
+  --font-s: 0.8rem;
+  --font-m: 1rem;
+  --font-l: 1.2rem;
+  --font-xl: 1.4rem;
+  --font-2xl: 1.8rem;
+  --font-3xl: 2.6rem;
+}
+
+html {
+  font-size: 16px;
+}
+
+p, a, input, li {
+  font-size: var(--font-m);
+  color: var(--color-text);
+}
+
+.text-secondary {
+  color: var(--color-secondary) !important;
+}
