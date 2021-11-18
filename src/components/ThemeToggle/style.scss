@@ -1,0 +1,28 @@
+.theme-toggle {
+    &__button {
+        background-color: var(--color-white);
+        height: 35px;
+        width: 60px;
+        outline: 0;
+        border: 0;
+        border-radius: calc(35px / 2);
+        position: relative;
+    }
+    &__icon {
+        background-color: var(--color-background);
+        height: 31px;
+        width: 31px;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &--dark &__icon {
+        right: 2px;
+        left: unset;
+        color: white;
+    }
+}

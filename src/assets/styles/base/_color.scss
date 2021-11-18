@@ -1,4 +1,7 @@
-:root {
+.theme {
+  transition: 0.4s ease-in-out;
+}
+.theme--light {
   --color-background: #f1f1ef;
   --color-white: #fff;
   --color-primary: #c19434;
@@ -18,4 +21,19 @@
   --color-danger: red;
 
   --color-modal: #000000e8;
+
+
+  --color-dark-background: #262626;
+  --color-dark-white: #1a1a1a;
+  --color-dark-primary: #c19434;
+  --color-dark-secondary: #34421e;
+  --color-dark-text: white;
+}
+
+.theme--dark {
+  --color-background: #262626;
+  --color-white: #1a1a1a;
+  --color-primary: #c19434;
+  --color-secondary: #34421e;
+  --color-text: white;
 }

@@ -1,11 +1,19 @@
+@import "../../assets/styles/abstract/mixin";
+
 .side-bar {
     background-color: var(--color-white);    
     width: 300px;
     display: flex;
     flex-direction: column;
     padding: var(--space-md);
+    @include medium-down {
+        width: 80px;
+    }
     p {
         margin: 0;
+        @include medium-down {
+            display: none;
+        }
     }
     &__avatar-wrapper {
         height: 50px;
@@ -13,6 +21,11 @@
         background-color: var(--color-secondary);
         border-radius: 50%;
         margin-right: var(--space-md);
+        @include medium-down {
+            width: 45px;
+            height: 45px;
+            margin: 0;
+        }
     }
     &__user {
         display: flex;
@@ -35,8 +48,38 @@
         background-color: var(--color-background);
         margin-bottom: var(--space-xs);
         border-radius: 16px;
+        color: var(--color-text);
+        @include medium-down {
+            justify-content: center;
+            &.side-bar__item--theme {
+                svg {
+                    display: none;
+                }
+            }
+        }
         &:last-child {
             margin-bottom: 0;
+        }
+        &--theme {
+            padding: var(--space-xs) var(--space-sm);
+            .theme-toggle {
+                margin-left: auto;
+                @include medium-down {
+                    margin-left: 0;
+                    .theme-toggle__button {
+                        width: auto;
+                        background-color: transparent;
+                    }
+                    .theme-toggle__icon {
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    svg {
+                        display: block;
+                    }
+                }
+            }
         }
         svg {
             font-size: var(--font-l);

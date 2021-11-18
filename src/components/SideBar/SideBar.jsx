@@ -1,6 +1,8 @@
 import React from "react";
 import { adminItems, userItems } from "./config";
 import { Link } from "react-router-dom";
+import { BiPaint } from "react-icons/bi";
+import ThemeToggle from "../ThemeToggle";
 import "./style.scss";
 
 const SideBar = () => {
@@ -20,6 +22,11 @@ const SideBar = () => {
         ))}
       </div>
       <div className="side-bar__bottom">
+        <div className="side-bar__item side-bar__item--theme">
+          <BiPaint />
+          <p>Theme</p>
+          <ThemeToggle />
+        </div>
         {items.filter(item => !!item.bottom).map(({icon: Icon, ...item}) => (
           <Link className="side-bar__item" key={item.name} to="#" onClick={item.action}>
             <Icon />
