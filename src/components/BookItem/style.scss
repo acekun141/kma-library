@@ -1,0 +1,38 @@
+.book-item {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    p {
+        margin: 0;
+    }
+    &__status {
+        position: absolute;
+        top: var(--space-md);
+        right: var(--space-md);
+        background-color: var(--color-white);
+        padding: var(--space-xs);
+        border-radius: 8px;
+        font-weight: bold;
+    }
+    &__cover {
+        height: 250px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__content {
+        padding: var(--space-md);
+        padding-top: 0;
+    }
+    &__name {
+        font-weight: bold;
+        font-size: var(--font-l);
+        margin-top: var(--space-xs) !important;
+    }
+    &__type {
+        font-style: italic;
+    }
+}

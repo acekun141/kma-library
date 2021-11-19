@@ -1,0 +1,41 @@
+.book-search {
+    &__input {
+        display: flex;
+        border-radius: 16px;
+        background-color: var(--color-white);
+        padding: var(--space-xs);
+        input {
+            flex: 1;
+            outline: 0;
+            border: 0;
+            background-color: transparent;
+            padding: 0 var(--space-md);
+        }
+    }
+    &__search-button {
+        width: 50px;
+        border: 0;
+        outline: 0;
+        border-radius: 8px;
+        font-size: var(--font-l);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-primary);
+        color: var(--color-text);
+    }
+    &__filter {
+        display: flex;
+        margin-top: var(--space-xs);
+    }
+    &__filter-item {
+        font-size: var(--font-s);
+        background-color: var(--color-white);
+        padding: var(--space-xs) var(--space-sm);
+        border-radius: 16px;
+        margin-right: var(--space-xs);
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

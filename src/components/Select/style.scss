@@ -1,0 +1,25 @@
+.select {
+    background-color: var(--color-background);
+    position: relative;
+    border-radius: 8px;
+    display: inline-block;
+    &__value {
+        padding: var(--space-sm);
+        padding-right: calc(var(--space-sm) * 3);
+        font-weight: bold;
+    }
+    &__icon {
+        position: absolute;
+        top: 50%;
+        right: var(--space-sm);
+        transform: translateY(-50%);
+        font-size: var(--font-xl);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__dropdown {
+        position: absolute;
+        display: none;
+    }
+}

@@ -6,7 +6,7 @@ const logout = () => {
 };
 
 export const adminItems = [
-  { name: "Dashboard", path: "/admin-dashboard", icon: BiHome, isAdmin: true, active: true },
+  { name: "Dashboard", path: "/dashboard", icon: BiHome, isAdmin: true },
   { name: "Message", path: "/message", icon: BiMessage, isAdmin: false },
   { name: "Books", path: "/books", icon: BiBook, isAdmin: false },
   { name: "Ebooks", path: "/ebooks", icon: BiBookmark, isAdmin: false },

@@ -1,0 +1,32 @@
+@import "../../assets/styles/abstract/mixin";
+
+.screen--message {
+    height: 100%;
+}
+
+.message-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: var(--color-white);
+    padding: var(--space-md);
+    border-radius: 16px;
+    .user-bar {
+        width: 300px;
+        margin-right: var(--space-md);
+        @include medium-down {
+            width: calc(45px + var(--space-md) * 2);
+            .user-card {
+                .user-avatar {
+                    margin: 0;
+                }
+                &__noti {
+                    display: none;
+                }
+            }
+        }
+    }
+    .message-board {
+        flex: 1;
+    }
+}

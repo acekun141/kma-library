@@ -1,0 +1,23 @@
+.list-type {
+    display: flex;
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        font-size: var(--font-xl);
+        border: 0;
+        outline: 0;
+        border-radius: 16px;
+        margin-right: var(--space-xs);
+        background-color: var(--color-white);
+        color: var(--color-text);
+        &:last-child {
+            margin-right: 0;
+        }
+        &--active {
+            background-color: var(--color-primary);
+        }
+    }
+}

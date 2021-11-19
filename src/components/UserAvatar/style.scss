@@ -1,0 +1,14 @@
+.user-avatar {
+    height: 35px;
+    width: 35px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    p {
+        text-transform: uppercase;
+        margin: 0;
+        font-weight: bold;
+    }
+}

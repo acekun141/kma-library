@@ -15,10 +15,9 @@
             display: none;
         }
     }
-    &__avatar-wrapper {
+    .user-avatar {
         height: 50px;
         width: 50px;
-        background-color: var(--color-secondary);
         border-radius: 50%;
         margin-right: var(--space-md);
         @include medium-down {

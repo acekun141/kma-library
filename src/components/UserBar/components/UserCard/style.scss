@@ -1,0 +1,24 @@
+.user-card {
+    display: flex;
+    padding: var(--space-md);
+    border-radius: 8px;
+    margin-bottom: var(--space-xs);
+    // background-color: var(--color-background);
+    &--active {
+        background-color: var(--color-background);
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+    p {
+        margin: 0;
+    }
+    .user-avatar {
+        height: 45px;
+        width: 45px;
+        margin-right: var(--space-md);
+    }
+    &__last-activity {
+        font-size: var(--font-s);
+    }
+}
