@@ -6,6 +6,7 @@ import Books from "./screens/Books";
 import Message from "./screens/Message";
 // import boostrap styles
 import "bootstrap/dist/css/bootstrap.min.css"
+import Login from "./screens/Login/Login";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <ThemeProvider>
         <div className="App">
           <Routes>
-            <Route exact={true} path="/" element={<RedirectToDashboard />} />
+            <Route exact={true} path="/" element={<Login />} />
             <Route exact={true} path="/dashboard" element={<AdminDashboard />} />
             <Route exact={true} path="/books" element={<Books />} />
             <Route exact={true} path="/message" element={<Message />} />

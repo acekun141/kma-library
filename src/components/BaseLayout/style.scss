@@ -5,6 +5,7 @@
     height: 100vh;
     &__sidebar {
         .side-bar {
+            overflow-y: auto;
             height: 100%;
         }
     }

@@ -38,7 +38,9 @@
     &__top {
         flex: 1;
     }
-    &__bottom {}
+    &__bottom {
+        margin-top: var(--space-sm);
+    }
     &__item {
         display: flex;
         align-items: center;

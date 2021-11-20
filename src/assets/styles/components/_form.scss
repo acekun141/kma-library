@@ -1,0 +1,27 @@
+.form {
+    background-color: var(--color-white);
+    color: var(--color-text);
+    label {
+        color: var(--color-text);
+    }
+    input {
+        background-color: var(--color-background);
+        border: 0;
+        color: var(--color-text);
+        &:focus {
+            background-color: var(--color-background);
+            color: var(--color-text);
+        }
+    }
+    .btn {
+        font-weight: bold;
+        border-radius: 8px;
+    }
+    input {
+        border-radius: 8px;
+    }
+}
+
+.form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+    font-weight: bold;
+}
